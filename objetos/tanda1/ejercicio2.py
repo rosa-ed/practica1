@@ -5,6 +5,8 @@
 # Implementa un test donde crees un punto, lo imprimas utilizando de manera implícita
 # el metodo __str__(), imprimas su coordenada x, asignes 0 a su coordenada x, y vuelvas a imprimir el punto.
 
+# Esto es una línea añadida para poder hacer el ejercicio 9 de git
+
 class Punto():
     
     def __init__(self, x, y):
