@@ -1,0 +1,18 @@
+La diferencia entre eliminar un archivo del stage y borrarlo físicamente con git 
+rm:
+
+- Eliminar un archivo del stage (sin borrarlo físicamente):
+   Al usar el comando "git rm --cached", el archivo se elimina del área de 
+staging y del control de versiones de Git, pero permanece en el sistema de archivos 
+local. Esto significa que:
+   - El archivo ya no será incluido en futuros commits.
+   - Git lo tratará como un archivo no rastreado (untracked).
+   - El archivo sigue existiendo físicamente en el directorio local, por lo que 
+se puede seguir trabajando con él.
+
+- Borrar un archivo físicamente: 
+   Cuando usamos el comando "git rm" sin la opción --cached, el archivo se elimina 
+tanto del control de versiones como de local. Esto significa que:
+   - El archivo será eliminado del repositorio.
+   - También será eliminado del directorio local, y no se podra trabajar él a menos 
+que se recupere.
